@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Merriweather:ital@1&family=Orelega+One&family=Square+Peg&display=swap');
+
+body{
+  background-image: url('Images/bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+h1{
+  font-family: 'Square Peg', cursive;
+  font-size: 55px;
+}
+h3{
+  font-family: 'Kanit', sans-serif;
+}
+
+
+/* navigation bar */
+.navbar{
+  background: #808080;
+  opacity: 0.9;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 10%;
+  z-index: 4;
+}
+.navbar img{
+  width: 20%;
+  height: 300%;
+  position: relative;bottom: 45px;
+}
+.navbar ul{
+  list-style: none;
+  float: right;
+  display: inline-block;
+}
+.navbar ul li{
+  display: inline;
+  margin-right: 34px;
+}
+.navbar ul li button{
+  position: relative;bottom: 5px;
+  background-color: #808080;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  border: 1px solid;
+	border-color: transparent;
+	transition: 0.8s ease;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: 'Orelega One', cursive;
+}
+.navbar #home{
+  background-color: black;
+  color: white;
+  cursor: default;
+}
+.navbar button:not(#home):hover{
+  background-color: black;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+  color: white;
+}
+
+
+/* Welcome */
+.intro{
+  margin: auto;
+  opacity: 0.8;
+  position: relative;top: 100px;
+  width: 80%;
+  height: 400px;
+  background-color: #525252;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+}
+.intro img{
+  width: 500px;
+  height: 110%;
+  position: relative;right: 10px;
+}
+.intro h1{
+  text-align: center;
+  position: relative;right: 70px;
+  color: #ededed;
+}
+
+
+/* Slideshow */
+* {box-sizing:border-box}
+.pictures{
+  opacity: 0.8;
+  width: 80%;
+  height: 650px;
+  background-color: #525252;
+  position: relative;top: 100px;
+  margin: auto;
+  border-radius: 30px;
+}
+.pictures h3{
+  color: #ededed;
+  font-size: 40px;
+  position: relative;top: 28px;left: 60px;
+  font-weight: bold;
+}
+.pic{
+  display: none;
+  position: relative;left: 280px;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #ededed;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;top: 40px;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+/* Footer */
+.footer{
+  background-color: black;
+  color: white;
+  width: 1348px;
+  position: relative;top: 100px;right: 8px;
+}
+.footer #logofooter{
+  width: 20%;
+  height: 100%;
+  position: relative;bottom: 10px;
+}
+.footer ul li{
+  list-style: none;
+}
+.footer ul li a{
+  color: white;
+  font-family: 'Merriweather', serif;
+  text-decoration: none;
+}
+.footer ul{
+  padding-left: 10px;
+  display: inline-block;
+}
+.footer p{
+  padding-left: 10px;
+}
+.explore{
+  position: relative;left: 200px;bottom: 90px;
+}
+.explore li button{
+  background-color: transparent;
+  border-color: transparent;
+  color: white;
+  cursor: pointer;
+  margin-top: 5px;
+  font-family: 'Merriweather', serif;
+}
+.explore #homefooter{
+  background-color: #444444;
+  cursor: default;
+}
+.explore button:hover{
+  background-color: #444444;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+  color: white;
+}
+.visit{
+  position: relative;left: 375px;bottom: 120px;
+}
+.visit li a{
+  position: relative;bottom: 10px;
+}
+.visit li img{
+  width: 20px;
+  height: 20px;
+  position: relative;bottom: 10px;
+}
+.legal{
+  position: relative;left: 500px;bottom: 130px;
+}
+.legal li a{
+  position: relative;bottom: 10px;
+}
+#copyright{
+  text-align: center;
+}
+
+
+
+
+/* animation */
+.navbar{
+  animation: animate 0.5s;
+}
+@keyframes animate{
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Merriweather:ital@1&family=Orelega+One&family=Square+Peg&display=swap');
+
+body{
+  background-image: url('Images/bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+h1{
+  font-family: 'Square Peg', cursive;
+  font-size: 55px;
+}
+h3{
+  font-family: 'Kanit', sans-serif;
+}
+
+
+/* navigation bar */
+.navbar{
+  background: #808080;
+  opacity: 0.9;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 10%;
+  z-index: 4;
+}
+.navbar img{
+  width: 20%;
+  height: 300%;
+  position: relative;bottom: 45px;
+}
+.navbar ul{
+  list-style: none;
+  float: right;
+  display: inline-block;
+}
+.navbar ul li{
+  display: inline;
+  margin-right: 34px;
+}
+.navbar ul li button{
+  position: relative;bottom: 5px;
+  background-color: #808080;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  border: 1px solid;
+	border-color: transparent;
+	transition: 0.8s ease;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: 'Orelega One', cursive;
+}
+.navbar #about{
+  background-color: black;
+  color: white;
+  cursor: default;
+}
+.navbar button:not(#about):hover{
+  background-color: black;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+  color: white;
+}
+
+
+
+/* Profile */
+.profile{
+  margin: auto;
+  position: relative;top: 90px;
+  width: 60%;
+  height: 540px;
+  background-color: #525252;
+  border-radius: 30px;
+  text-align: justify;
+}
+.profile h3{
+  font-size: 40px;
+  position: relative; left: 40px; top: 10px;
+}
+.profile p{
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  font-size: 23px;
+  margin: 0 20px 0 20px;
+}
+.profile img{
+  width: 30%;
+  border-radius: 120px;
+  position: relative; left: 270px; bottom: 20px;
+}
+
+/* Footer */
+.footer{
+  background-color: black;
+  color: white;
+  width: 1348px;
+  position: relative;top: 160px;right: 8px;
+}
+.footer #logofooter{
+  width: 20%;
+  height: 100%;
+  position: relative;bottom: 10px;
+}
+.footer ul li{
+  list-style: none;
+}
+.footer ul li a{
+  color: white;
+  font-family: 'Merriweather', serif;
+  text-decoration: none;
+}
+.footer ul{
+  padding-left: 10px;
+  display: inline-block;
+}
+.footer p{
+  padding-left: 10px;
+}
+.explore{
+  position: relative;left: 200px;bottom: 90px;
+}
+.explore li button{
+  background-color: transparent;
+  border-color: transparent;
+  color: white;
+  cursor: pointer;
+  margin-top: 5px;
+  font-family: 'Merriweather', serif;
+}
+.explore #aboutfooter{
+  background-color: #444444;
+  cursor: default;
+}
+.explore button:hover{
+  background-color: #444444;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+  color: white;
+}
+.visit{
+  position: relative;left: 375px;bottom: 120px;
+}
+.visit li a{
+  position: relative;bottom: 10px;
+}
+.visit li img{
+  width: 20px;
+  height: 20px;
+  position: relative;bottom: 10px;
+}
+.legal{
+  position: relative;left: 500px;bottom: 130px;
+}
+.legal li a{
+  position: relative;bottom: 10px;
+}
+#copyright{
+  text-align: center;
+}
+
+
+
+
+/* animation */
+.navbar{
+  animation: animate 0.5s;
+}
+@keyframes animate{
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

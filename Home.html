@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Happy Hopper Ranch</title>
+    <link rel="stylesheet" href="Home.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <img src="./Images/logo_w.png" alt="logo_word">
+      <ul>
+        <li><button id="home" disabled>Home</button></li>
+        <li><button id="shop">Shop</button></li>
+        <li><button id="about">About</button></li>
+      </ul>
+    </div>
+
+    <div class="intro">
+      <img id="logo" src="./Images/logo.png" alt="logo">
+      <h1>Welcome to Happy Hopper Ranch where we provide food and supplies for your cute and lovely hoppers</h1>
+    </div>
+
+    <div class="pictures">
+      <h3>Products</h3>
+      <div class="pic fade">
+        <img src="./Images/food.png" alt="Product - Food">
+      </div>
+      <div class="pic fade">
+        <img src="./Images/toys.png" alt="Product - Toys">
+      </div>
+      <div class="pic fade">
+        <img src="./Images/clothes.png" alt="Product - Clothes">
+      </div>
+      <div class="pic fade">
+        <img src="./Images/bowls.png" alt="Product - Bowls/Feeders">
+      </div>
+      <div class="pic fade">
+        <img src="./Images/collars.png" alt="Product - Collars/Leashes">
+      </div>
+      <div class="pic fade">
+        <img src="./Images/beds.png" alt="Product - Beds">
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+
+    <footer class="footer">
+      <img id="logofooter" src="./Images/logo_2.png" alt="logo">
+      <ul class="explore">
+        <h3>Explore</h3>
+        <li><button id="homefooter" disabled>Home</button></li>
+        <li><button id="shopfooter">Shop</button></li>
+        <li><button id="aboutfooter">About</button></li>
+      </ul>
+
+      <ul class="visit">
+        <h3>Visit</h3>
+        <li>
+          <img src="./Images/fb.png" alt="Facebook Logo">
+          <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        </li>
+        <li>
+          <img src="./Images/gmail.png" alt="Gmail Logo">
+          <a>randomemail@gmail.com</a>
+        </li>
+      </ul>
+
+      <ul class="legal">
+        <h3>Legal</h3>
+        <li><a href="">Terms</a></li>
+        <li><a href="">Privacy</a></li>
+      </ul>
+      <p id="copyright">Copyright © 2022, Happy Hoppers Ranch. All Rights Reserved.</p>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="Main.js"></script>
+    <script type="text/javascript" src="Home.js"></script>
+  </body>
+</html>
