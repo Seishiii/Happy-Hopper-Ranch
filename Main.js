@@ -1,7 +1,7 @@
 //navigation for Navigation bar
 $(function(){
   $("#home").click(function(){
-    window.location = "Home.html";
+    window.location = "index.html";
   });
 });
 $(function(){
@@ -19,7 +19,7 @@ $(function(){
 //navigation for Footer bar
 $(function(){
   $("#homefooter").click(function(){
-    window.location = "Home.html";
+    window.location = "index.html";
   });
 });
 $(function(){
